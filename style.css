@@ -1,0 +1,67 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    background-color: black;
+}
+
+p, a {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.9;
+}
+
+
+/* Header & Navigation */
+
+header {
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    width: 100%; /* Make the header span the entire width of the viewport */
+    z-index: 1000; /* Ensure the header appears above other content */
+    background-color: black; /* Add background color to the header */
+}
+
+.navigation {
+    width: 100%; /* Make the navigation span the entire width */
+
+    display: flex; /* Use flexbox for layout */
+    padding: 10 10px; /* Add padding to space items from the edges */
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    justify-content: flex-end;
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    display: flex; /* Use flexbox for layout */
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.9;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    margin-right: 70px; /* Add spacing between list items */
+}
+
+
+/* Images */
+
+.logo img {
+    padding-left: 10px;
+    height: 50px;
+}
+
+.mission-image img {
+    height: 700px;
+}
