@@ -3,13 +3,19 @@ body, html {
     padding: 0;
 }
 
-* {
+body {
     background-color: black;
 }
 
 p, a {
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 22px;
+    color: seashell;
+    opacity: 0.9;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Helvetica", "Arial", sans-serif;
     color: seashell;
     opacity: 0.9;
 }
@@ -54,6 +60,52 @@ header {
     margin-right: 70px; /* Add spacing between list items */
 }
 
+.mission-image {
+    position: relative; /* Set position to relative */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.mission-image img {
+    height: 700px;
+}
+
+.mission-banner-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.mission-banner {
+    position: absolute;
+    top: 27%; /* Position from the top edge */
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 2;
+}
+
+.mission-banner h2,
+.mission-banner h4 {
+    width: 100%;
+    text-align: center;
+    margin: 7px;
+    padding: 0;
+}
+
+.TOTM {
+    text-align: center; /* Center the text horizontally */
+}
+
+.TOTM h2, .TOTM h4 {
+    margin-top: 10; /* Remove default margin */
+}
 
 /* Images */
 
@@ -64,4 +116,29 @@ header {
 
 .mission-image img {
     height: 700px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.image-gallery-item {
+    text-align: center;
+    
+}
+
+.image-gallery-item img {
+    height: 200px;
+    width: 300px;
+    display: block;
+}
+
+.image-gallery-item h4 {
+    text-align: center;
+    margin-top: 10px;
 }
