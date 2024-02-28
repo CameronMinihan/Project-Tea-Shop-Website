@@ -14,7 +14,7 @@ p, a {
     opacity: 0.9;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: "Helvetica", "Arial", sans-serif;
     color: seashell;
     opacity: 0.9;
@@ -99,13 +99,20 @@ header {
     padding: 0;
 }
 
-.TOTM {
+.totm {
     text-align: center; /* Center the text horizontally */
 }
 
-.TOTM h2, .TOTM h4 {
+.totm h2, .totm h4 {
     margin-top: 10; /* Remove default margin */
 }
+
+footer {
+    text-align: left;
+    margin-left: 20px;
+}
+
+
 
 /* Images */
 
